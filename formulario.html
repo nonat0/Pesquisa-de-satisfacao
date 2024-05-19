@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa de Satisfação</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação</h1>
+        <form action="resultado-pesquisa.html" method="post">     
+            <section>
+                <h2>Dados Pessoais:</h2>
+                <p>
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" id="nome" placeholder="Digite seu nome Completo:">
+                </p>
+                <p>
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="email" id="email" placeholder="Digite seu melhor e-mail:">
+                </p>
+                <p>
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="tel" id="telefone" placeholder="(xx)9xxxx-xxxx">
+                </p>
+                <p>
+                    <label for="nascimento"><strong>Data de Nascimento:</strong></label>
+                    <input type="date" id="nascimento">                
+                </p>
+            </section>
+            <section>
+                <h2>Sessão 2</h2>
+                <div>
+                    <p>
+                        <strong>Qual o seu nível de satisfação com o nosso atendimento?</strong>
+                    </p>
+                    <p>
+                        <input type="radio" id="insatisfeito" name="satisfação">
+                        <label for="insatisfeito"><strong>Insatisfeito</strong> </label>
+                    </p>
+                    <p>
+                        <input type="radio" id="neutro" name="satisfação">
+                        <label for="neutro"><strong>Nem satisfeito(a), nem insatisfeito(a)</strong> </label>
+                    </p>
+                    <p>
+                        <input type="radio" id="satisfeito" name="satisfação">
+                        <label for="satisfeito"><strong>Satisfeito</strong> </label>
+                    </p>
+                    <label for="comentário"><strong>Comentário:</strong></label>
+                    <p>
+                        <textarea name="comentário" id="comentário" placeholder="Como podemos melhorar:" cols="30" rows="10"></textarea>
+                    </p>
+                    
+                </div>
+                <div>
+                    <p >
+                        <strong>De 0 a 10: Qual a chance de recomendar o nosso estabelecimento para um amigo?</strong>
+                        <br>
+                        <select>          
+                            <option>-</option>    
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <strong>Onde você ouviu falar sobre a gente?</strong> 
+                    <p>                       
+                        <input type="radio" id="instagram" name="share">
+                        <label for="instagram"> <strong>Instagram</strong> </label>
+                    </p>
+                    <p>
+                        <input type="radio" id="facebook" name="share">
+                        <label for="facebook"><strong>Facebook</strong></label>
+                    </p>
+                    <p>
+                        <input type="radio" id="X" name="share">
+                        <label for="X"><strong>X Platform</strong></label>                   
+                    <p>
+                    </p>
+                        <input type="radio" id="familia" name="share">
+                        <label for="familia"><strong>Família ou Amigos</strong></label>
+                    </p>
+                </div>
+            </section>
+        </form>
+    </body>
+    <footer>
+        <p>
+            <input type="checkbox">Autorizo o compartilhamento da minha resposta com terceiros
+        </p>
+        <p>
+            <input type="checkbox"> Receber atualizações por email
+        </p>
+        <input type="submit" value="Enviar">
+    </footer>
+</html>
